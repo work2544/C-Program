@@ -6,15 +6,15 @@ using namespace std;
 
 int main() {
 
-  /*  ofstream fileWriter;
+    ofstream fileWriter;
+    string str;
     fileWriter.open ("firstFile.cpp");
-    fileWriter << "#include <iostream>" << endl;
-    fileWriter << "int main() {" << endl;
-    fileWriter << "\tstd::cout << \"hello world\" << std::endl;" << endl;
-    fileWriter << "\treturn 0;" << endl;
-    fileWriter << "}" << endl;
-    fileWriter.close();*/
+    while (getline(cin,str)&&str!="exit")
+    {
+    fileWriter << str << endl;
+    } 
+    fileWriter.close();
 
-    cout<<"hello";
-    return 0;
+    system("g++ firstFile.cpp");
+    system("a.exe");
 }
