@@ -113,3 +113,8 @@ bool multiplechoicechecker(char cor){
     }
     return stat1;
 }
+void yesnochecker(){
+    char res;
+    cin>>res;
+    
+}
