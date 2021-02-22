@@ -21,7 +21,7 @@ int main() {
     system("g++ firstFile.cpp");//calcompilerer
     system("a.exe");//run
     //system("g++ firstFile_ans.cpp");//calcompilerer
-    system("F:/C-Program/firstFile_ans.exe");//run
+    system("F:/C-Program/firstFile_ans.exe");//run nocompare
     cout<<endl;
     
     return 0;
