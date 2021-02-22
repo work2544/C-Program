@@ -16,11 +16,13 @@ int main() {
     {
     fileWriter << str << endl;
     } 
-    fileWriter <<"system(\"g++ firstFile_ans.cpp\");\n";//calcompilerer
-    fileWriter <<"system(\"firstFile_ans.exe\");\n";//run
     fileWriter <<"return 0;}\n";
     fileWriter.close();
     system("g++ firstFile.cpp");//calcompilerer
     system("a.exe");//run
+    //system("g++ firstFile_ans.cpp");//calcompilerer
+    system("F:/C-Program/firstFile_ans.exe");//run
+    cout<<endl;
+    
     return 0;
 }
