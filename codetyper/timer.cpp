@@ -1,16 +1,16 @@
-//Creating Digital Watch in C++
 #include<iostream>
 #include<Windows.h>
 using namespace std;
 namespace WorkTime{
 class clock
 {
-public: int sec;
+public: int sec=10;
 void clocktimmer();
 };
 void clock::clocktimmer(void)
 {
-int sec = 10;
+while(1){
+sec = 10;
         for(int k = 0; k<=10; k++)
         {
             if(sec == 0)
@@ -24,6 +24,6 @@ int sec = 10;
             system("Cls");
         }
 
-
+}
 }
 }

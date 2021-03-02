@@ -1,0 +1,222 @@
+	
+	#include<iostream>
+
+	#include<cmath>
+
+	#include<cstdlib>
+
+	#include<string>
+
+	#include<fstream>
+
+	#include<ctime>
+
+	#include<vector>
+
+	#include<algorithm>
+
+	#include<iomanip>
+
+	int
+
+	signed int
+
+	singed long int
+
+	singed long long int
+
+	singed short int
+
+	unsigned int
+
+	unsinged long int
+
+	unsinged long long int
+
+	unsinged short int
+
+	char
+
+	singed char
+
+	double
+
+	long bouble
+
+	void
+
+	int main(){}
+
+	return 0;
+
+	cout<<"hello world";
+
+	cout<<"Hello world";
+
+	int x;
+
+	double y;
+
+	char z='A';
+
+	string A="I love CPE";
+
+	while(){}
+
+	if(){}else{}
+
+	switch
+
+	x=x+1;
+
+	for(int i;i<10;i++)
+
+	float arrey[5][2];
+
+	={{1,2},{3,4},{5,6}};
+
+	cin>>x;
+
+	x.size();
+	
+	int***p
+
+	void func (int x);
+	
+	getline(cin,text);
+
+	cin.ignore();
+
+	//comment
+
+	source.open
+
+	pow(5,5)
+
+	log10(5)
+
+	1*5*3+4-2/4*8
+
+	srand(time(0));
+
+	int x= rand()%4;
+
+	cout<<sqrt(10);
+
+	double x=sin(30);
+
+	if(x==0)cout<<"AbC";
+
+	sscanf()
+
+	using namespace std;
+
+	vector<int> x;
+
+	x.push_back(y);
+
+	int *y=&x;
+
+	break;
+
+	cout<<endl;
+
+	cout<<"\n";
+
+	cout<<"AbCdEf";
+
+	c = (a>b) ? a : b;
+
+	x = rand()%6;
+
+	;":'{](./<=%!>}]+-*,
+
+	bool
+
+	cin.get();
+
+	&*&&***&&&&
+
+	char format[]="%[^,],%d,%[^,],%f";
+
+	int N = x.size();
+
+	i++
+
+	char x = 'C'+1;
+
+	int x=5%3;
+
+	setw()
+
+	setprecision()
+
+	https://github.com/
+
+	ifstream source;
+
+	ofstream dest;
+
+	dest.open
+
+	getline(source,textline);
+
+	source.close();
+
+	dest.close();
+
+	int *p = NULL;
+
+	P = new int;
+
+	delete P;
+
+	float c[N];
+
+	float *c = new float[N];
+
+	float c[N][M];
+
+	str1.compare(str2);
+
+	const char*cname = c++name.c_str;
+
+	{[()]}
+
+	cout<<"abcdefg";
+
+	cout<<"hijklmnop";
+
+	cout<<"qrstuvwxyz";
+
+	p->x;
+
+	vecname.pop_back();
+
+	vecname.erase(position)
+
+	vecname.clear();
+
+	c++
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+
+
+	
+
+	
+	
+	
+
+	
