@@ -3,11 +3,11 @@
 using namespace std;
 int main()
 {
-    system("g++ result.cpp");
-    system("a.exe");
-    ifstream answer("cout.txt");
+    system("g++ input.cpp -o myinput");
+    system("myinput.exe");
+    ifstream answer("firstans.txt");
     ifstream user("first.txt");
-   string answerall,resulttemp;
+    string answerall,resulttemp;
     string userall,usertemp;
     
     while(getline(user,userall))

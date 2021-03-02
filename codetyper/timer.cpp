@@ -13,11 +13,6 @@ while(1){
 sec = 10;
         for(int k = 0; k<=10; k++)
         {
-            if(sec == 0)
-            {
-                sec = 10;
-            }
-
             cout<<sec<<endl;
             sec--;
             Sleep(1000);

@@ -3,15 +3,14 @@
 #include<string>
 using namespace std;
 int main(){
-string stagename="first.txt";
-fstream file("first.txt", ios::out); 
+string stagename="fisrt.txt";
+fstream file(stagename.c_str(), ios::out); 
 string line;
 streambuf* stream_buffer_cout = cout.rdbuf();
 streambuf* stream_buffer_cin = cin.rdbuf();
 streambuf* stream_buffer_file = file.rdbuf();
 cout.rdbuf(stream_buffer_file);
-for(int i=0;i<6;i++)
-cout<<"*"<<endl;
+cout<<"workza";
 file.close();
 return 0;
 }
