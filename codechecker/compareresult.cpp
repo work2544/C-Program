@@ -1,12 +1,18 @@
 #include<iostream>
 #include<fstream>
 using namespace std;
-int main()
+class compareresult{
+public:
+void mainCompare(string,string);
+};
+void compareresult::mainCompare(string answerfile,string userfile)
 {
+    answerfile+="ans.txt";
+    userfile+="input.txt";
     system("g++ input.cpp -o myinput");
     system("myinput.exe");
-    ifstream answer("firstans.txt");
-    ifstream user("first.txt");
+    ifstream answer(answerfile.c_str());
+    ifstream user(userfile.c_str());
     string answerall,resulttemp;
     string userall,usertemp;
     
@@ -26,10 +32,9 @@ int main()
     cout<<resulttemp;
     cout<<"---------------------GOT-------------------\n";
     cout<<usertemp;
-    cout<<"-------------------Result-----------------\n";
+    cout<<"--------------------Result-----------------\n";
     if(usertemp==resulttemp)
-    cout<<"\nTrue";
+    cout<<"True";
     else
-    cout<<"\nU suck";
-    return 0;
+    cout<<"False";
 }

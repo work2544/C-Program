@@ -1,25 +1,21 @@
 #include<iostream>
 #include<fstream>
-#include"F:\C-Program\stagename\stage.cpp"
+
 using namespace std;
+class userInput{
+public:
 void firstinclude(string);
 void userinclude();
 void lastinclude();
-int main(){
-    stagecount setting;
-    setting.setstage(1);
-    string stage=setting.name; //ส่งชื่อด่านมา
-    firstinclude(stage);
-    userinclude();
-    lastinclude();
-    return 0;
-}
-void firstinclude(string stagename)
+};
+
+
+void userInput::firstinclude(string stagename)
 {
 
     ofstream filewritter("input.cpp");
     filewritter<<"#include<iostream>\n#include<fstream>\n#include<string>\nusing namespace std;\nint main(){\n";
-    filewritter<<"string stagename=\""<<stagename<<".txt\";";
+    filewritter<<"string stagename=\""<<stagename<<"input.txt\";";
     filewritter<<"\nfstream file(stagename.c_str(), ios::out); \nstring line;\n";
     filewritter<<"streambuf* stream_buffer_cout = cout.rdbuf();\n"
     << "streambuf* stream_buffer_cin = cin.rdbuf();\n"
@@ -27,7 +23,7 @@ void firstinclude(string stagename)
     << "cout.rdbuf(stream_buffer_file);\n";
     filewritter.close();
 }
-void userinclude()
+void userInput::userinclude()
 {
     string textline;
     ofstream filewritter("input.cpp",ios::app);
@@ -38,7 +34,7 @@ void userinclude()
     }
     filewritter.close();
 }
-void lastinclude()
+void userInput::lastinclude()
 {
     ofstream filewritter("input.cpp",ios::app);
     filewritter<<"file.close();\nreturn 0;\n}";
