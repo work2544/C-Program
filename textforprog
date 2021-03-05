@@ -1,0 +1,25 @@
+info
+C++ Coding Booster is a program to enhance c++ coding skill and typing skill with 3 minigame.
+Hopefully, user will acquire more coding skill and entertainment we offer.
+
+
+mode 1 typing master
+Blocks contain c++ code falling rapidly from the top.
+User will need to type the code in those blocks.
+The game is over if the blockspile reach the top. 
+
+
+mode 2 quiz warrior
+There will be 2 types of quiz.
+Multiple choice - choose the correct items for it's question.
+Ouput - type output from the question.
+User must answer correctly to proceed to next question or use skip option.
+
+
+mode 3 program builder
+User will have to write c++ program from each stage.
+Complete the stage to unlocks more stages.
+
+
+
+
