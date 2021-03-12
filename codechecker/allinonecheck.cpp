@@ -3,15 +3,19 @@
 #include"compareresult.cpp"
 #include"userInput.cpp"
 using namespace std;
-int main(){
+int stagesequence::xx;
+int main(int argc,char *argv[]){
+    cout<<"lest's go";
     userInput inputuser;
     compareresult resultcompare;
-    stagesequence sequence;
-    sequence.setstage(1);
-    string currentstage=sequence.name; //ส่งชื่อด่านมา
-    inputuser.firstinclude(currentstage);
+    stagesequence level;
+    level.setstage(atoi(argv[1]));
+    cout<<level.xx;
+    cout<<level.name;
+    
+    inputuser.firstinclude(level.name); //ส่วนนี้คือส่วนแรก จะอยู่กับปุ่มเลือกความยาก
     inputuser.userinclude();
     inputuser.lastinclude();
-    resultcompare.mainCompare(currentstage,currentstage);
+    resultcompare.mainCompare(level.name,level.name);
     return 0;
 }
