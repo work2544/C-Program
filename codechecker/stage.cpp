@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
-class stagecount{
+class stagesequence{
     public: string name=" ";
     void setstage(int);
 };
-void stagecount::setstage(int count)
+void stagesequence::setstage(int count)
 {
     switch (count)//countคือเลขด่าน อันนี้สมมุติไว้ก่อน
     {

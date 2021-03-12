@@ -3,12 +3,13 @@
 #include<cstdlib>
 #include<fstream>
 #include <vector>
-#include"timer.cpp"
+
 using namespace std;
 int main()
 {
     srand(time(0));
-    WorkTime::clock clock1;
+    long int starttime=time(0);
+    
     ifstream wordsource("wordmode.txt");
     string input="",textline;
     vector<string> fixword;
@@ -17,18 +18,22 @@ int main()
            wordsource>>ws;
            fixword.push_back(textline);
         }
-    while (input!="exit"&&clock1.sec>0)
+    while (input!="exit")
     {
+        
         string texture=fixword[rand()%fixword.size()];
         cout<<"Type if !! -->"<<texture<<endl;
         getline(cin,input);
         if(texture==input)
-        clock1.sec++;
+        {
+         cout<<"correct"<<endl;   
+        }
         else
         {
-            clock1.sec=0;
-        cout<<"you fue=ck up";
+        cout<<"you fueck up"<<endl;
         }
     }
+    long int elapse=time(0)-starttime;
+        cout<<endl<<elapse;
     cout<<"end game";
 }
